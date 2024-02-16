@@ -28,6 +28,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".MyCarrierService"
+            android:label="MyCarrierService"
+            android:permission="android.permission.BIND_CARRIER_SERVICES"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.carrier.CarrierService"/></intent-filter>
+        </service>
     </application>
 
 </manifest>
